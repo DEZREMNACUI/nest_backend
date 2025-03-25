@@ -13,7 +13,7 @@ export class Role {
   id: number;
 
   @Column({
-    type: 'simple-enum',
+    type: 'enum',
     enum: RoleType,
     default: RoleType.USER,
   })
